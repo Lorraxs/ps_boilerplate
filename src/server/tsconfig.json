@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "typeRoots": [ "../shared/interfaces/global.d.ts"],
+    /* "lib": ["es6"], */
+    "target": "ES6",
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "pretty": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "../../dist",
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@core-sv/*": ["../../../../ProjectStarboy/src/server/*"],
+      "@core-shared/*": ["../../../../ProjectStarboy/src/shared/*"],
+    },
+  },
+  "include": ["./", "../shared"],
+  "exclude": ["node_modules", "**/__tests__/*"],
+  "references": [{"path": "../../../../ProjectStarboy/src/shared/tsconfig.json"}, {"path": "../../../../ProjectStarboy/src/server/tsconfig.json"}]
+  
+}
